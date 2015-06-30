@@ -142,7 +142,7 @@
             content:'';
             display:table;
         }
-        .wrapper{
+        .cap .wrapper{
             width:400px;float:right;
             margin:100px 200px;
         }
@@ -161,6 +161,23 @@
             -moz-transform:translate3d(0, 0, 0);
             transition:1s all ease-out;
 
+        }
+        @media screen and (max-width:767px){
+            .cap .wrapper{
+                width:90%;margin:30px auto;float:none;
+            }
+            .cap h1{
+                font-size:30px;
+            }
+            .col-3, .col-9{
+                width:100%;
+            }
+            .form-horizontal .control-label{
+                text-align:left;
+            }
+            .col-offset-3{
+                margin-left:auto;
+            }
         }
     </style>
 </head>
